@@ -1,0 +1,1607 @@
+{
+  "version": 1,
+  "leads": [
+    {
+      "id": "L-1001",
+      "customerId": "C-2001",
+      "name": "Aditya Pratama",
+      "channel": "WhatsApp",
+      "branch": "Manado",
+      "owner": null,
+      "product": "MPV Family",
+      "stage": "New",
+      "value": 285000000,
+      "createdAt": "2026-10-17T06:44:00.000Z",
+      "firstReplyMins": null,
+      "marketingConsent": false,
+      "optedOut": false,
+      "intent": "Minta simulasi cicilan",
+      "score": 52,
+      "inquiries": 1,
+      "contact": "+62 8xx-xxxx-1000",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-0-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik MPV Family. Bisa bantu simulasi cicilan?",
+          "at": "2026-10-17T06:44:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari WhatsApp masuk",
+          "at": "2026-10-17T06:44:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: New",
+          "at": "2026-10-17T06:44:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1002",
+      "customerId": "C-2002",
+      "name": "Citra Lestari",
+      "channel": "Instagram",
+      "branch": "Palu",
+      "owner": null,
+      "product": "SUV Urban",
+      "stage": "New",
+      "value": 340000000,
+      "createdAt": "2026-10-17T06:55:00.000Z",
+      "firstReplyMins": null,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Jadwalkan test drive",
+      "score": 59,
+      "inquiries": 2,
+      "contact": "+62 8xx-xxxx-1001",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-1-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik SUV Urban. Bisa bantu jadwal test drive?",
+          "at": "2026-10-17T06:55:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Instagram masuk",
+          "at": "2026-10-17T06:55:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: New",
+          "at": "2026-10-17T06:55:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1003",
+      "customerId": "C-2003",
+      "name": "Bima Saputra",
+      "channel": "Facebook",
+      "branch": "Kendari",
+      "owner": "Maya",
+      "product": "Scooter 155",
+      "stage": "New",
+      "value": 32000000,
+      "createdAt": "2026-10-17T07:08:00.000Z",
+      "firstReplyMins": null,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Cek stok dan warna",
+      "score": 66,
+      "inquiries": 3,
+      "contact": "+62 8xx-xxxx-1002",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-2-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik Scooter 155. Bisa bantu cek stok dan warna?",
+          "at": "2026-10-17T07:08:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Facebook masuk",
+          "at": "2026-10-17T07:08:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: New",
+          "at": "2026-10-17T07:08:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1004",
+      "customerId": "C-2004",
+      "name": "Dewi Anggraini",
+      "channel": "TikTok",
+      "branch": "Gorontalo",
+      "owner": "Fajar",
+      "product": "MPV Family",
+      "stage": "New",
+      "value": 285000000,
+      "createdAt": "2026-10-17T07:12:00.000Z",
+      "firstReplyMins": null,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Minta simulasi cicilan",
+      "score": 73,
+      "inquiries": 4,
+      "contact": "+62 8xx-xxxx-1003",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-3-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik MPV Family. Bisa bantu simulasi cicilan?",
+          "at": "2026-10-17T07:12:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari TikTok masuk",
+          "at": "2026-10-17T07:12:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: New",
+          "at": "2026-10-17T07:12:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1005",
+      "customerId": "C-2005",
+      "name": "Eka Santoso",
+      "channel": "Website",
+      "branch": "Manado",
+      "owner": "Nadia",
+      "product": "SUV Urban",
+      "stage": "Qualified",
+      "value": 340000000,
+      "createdAt": "2026-10-17T07:22:00.000Z",
+      "firstReplyMins": 7,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Jadwalkan test drive",
+      "score": 80,
+      "inquiries": 1,
+      "contact": "+62 8xx-xxxx-1004",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-4-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik SUV Urban. Bisa bantu jadwal test drive?",
+          "at": "2026-10-17T07:22:00.000Z"
+        },
+        {
+          "id": "m-4-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Eka. Saya Nadia dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-10-17T07:29:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Website masuk",
+          "at": "2026-10-17T07:22:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Qualified",
+          "at": "2026-10-17T07:22:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1006",
+      "customerId": "C-2006",
+      "name": "Farah Putri",
+      "channel": "WhatsApp",
+      "branch": "Palu",
+      "owner": "Raka",
+      "product": "Scooter 155",
+      "stage": "New",
+      "value": 32000000,
+      "createdAt": "2026-10-17T07:27:00.000Z",
+      "firstReplyMins": null,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Cek stok dan warna",
+      "score": 87,
+      "inquiries": 2,
+      "contact": "+62 8xx-xxxx-1005",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-5-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik Scooter 155. Bisa bantu cek stok dan warna?",
+          "at": "2026-10-17T07:27:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari WhatsApp masuk",
+          "at": "2026-10-17T07:27:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: New",
+          "at": "2026-10-17T07:27:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1007",
+      "customerId": "C-2007",
+      "name": "Gilang Ramadhan",
+      "channel": "Instagram",
+      "branch": "Kendari",
+      "owner": "Maya",
+      "product": "MPV Family",
+      "stage": "Lost",
+      "value": 285000000,
+      "createdAt": "2026-10-01T06:50:00.000Z",
+      "firstReplyMins": 4,
+      "marketingConsent": false,
+      "optedOut": false,
+      "intent": "Minta simulasi cicilan",
+      "score": 94,
+      "inquiries": 3,
+      "contact": "+62 8xx-xxxx-1006",
+      "closedAt": null,
+      "nextAction": "Evaluasi alasan kehilangan",
+      "messages": [
+        {
+          "id": "m-6-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik MPV Family. Bisa bantu simulasi cicilan?",
+          "at": "2026-10-01T06:50:00.000Z"
+        },
+        {
+          "id": "m-6-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Gilang. Saya Maya dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-10-01T06:54:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Instagram masuk",
+          "at": "2026-10-01T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Lost",
+          "at": "2026-10-01T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1008",
+      "customerId": "C-2008",
+      "name": "Hana Wijaya",
+      "channel": "Facebook",
+      "branch": "Gorontalo",
+      "owner": "Fajar",
+      "product": "SUV Urban",
+      "stage": "Nurture",
+      "value": 340000000,
+      "createdAt": "2026-09-24T06:50:00.000Z",
+      "firstReplyMins": 8,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Jadwalkan test drive",
+      "score": 56,
+      "inquiries": 4,
+      "contact": "+62 8xx-xxxx-1007",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-7-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik SUV Urban. Bisa bantu jadwal test drive?",
+          "at": "2026-09-24T06:50:00.000Z"
+        },
+        {
+          "id": "m-7-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Hana. Saya Fajar dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-09-24T06:58:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Facebook masuk",
+          "at": "2026-09-24T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Nurture",
+          "at": "2026-09-24T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1009",
+      "customerId": "C-2009",
+      "name": "Indra Permana",
+      "channel": "TikTok",
+      "branch": "Manado",
+      "owner": "Nadia",
+      "product": "Scooter 155",
+      "stage": "New",
+      "value": 32000000,
+      "createdAt": "2026-10-14T06:50:00.000Z",
+      "firstReplyMins": 11,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Cek stok dan warna",
+      "score": 63,
+      "inquiries": 1,
+      "contact": "+62 8xx-xxxx-1008",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-8-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik Scooter 155. Bisa bantu cek stok dan warna?",
+          "at": "2026-10-14T06:50:00.000Z"
+        },
+        {
+          "id": "m-8-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Indra. Saya Nadia dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-10-14T07:01:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari TikTok masuk",
+          "at": "2026-10-14T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: New",
+          "at": "2026-10-14T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1010",
+      "customerId": "C-2010",
+      "name": "Julia Maharani",
+      "channel": "Website",
+      "branch": "Palu",
+      "owner": "Raka",
+      "product": "MPV Family",
+      "stage": "Qualified",
+      "value": 285000000,
+      "createdAt": "2026-10-07T06:50:00.000Z",
+      "firstReplyMins": 19,
+      "marketingConsent": true,
+      "optedOut": true,
+      "intent": "Minta simulasi cicilan",
+      "score": 70,
+      "inquiries": 2,
+      "contact": "+62 8xx-xxxx-1009",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-9-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik MPV Family. Bisa bantu simulasi cicilan?",
+          "at": "2026-10-07T06:50:00.000Z"
+        },
+        {
+          "id": "m-9-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Julia. Saya Raka dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-10-07T07:09:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Website masuk",
+          "at": "2026-10-07T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Qualified",
+          "at": "2026-10-07T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1011",
+      "customerId": "C-2011",
+      "name": "Kevin Setiawan",
+      "channel": "WhatsApp",
+      "branch": "Kendari",
+      "owner": "Maya",
+      "product": "SUV Urban",
+      "stage": "Test drive",
+      "value": 340000000,
+      "createdAt": "2026-09-30T06:50:00.000Z",
+      "firstReplyMins": 7,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Jadwalkan test drive",
+      "score": 77,
+      "inquiries": 3,
+      "contact": "+62 8xx-xxxx-1010",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-10-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik SUV Urban. Bisa bantu jadwal test drive?",
+          "at": "2026-09-30T06:50:00.000Z"
+        },
+        {
+          "id": "m-10-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Kevin. Saya Maya dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-09-30T06:57:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari WhatsApp masuk",
+          "at": "2026-09-30T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Test drive",
+          "at": "2026-09-30T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1012",
+      "customerId": "C-2012",
+      "name": "Laras Pertiwi",
+      "channel": "Instagram",
+      "branch": "Gorontalo",
+      "owner": "Fajar",
+      "product": "Scooter 155",
+      "stage": "Proposal",
+      "value": 32000000,
+      "createdAt": "2026-09-23T06:50:00.000Z",
+      "firstReplyMins": 24,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Cek stok dan warna",
+      "score": 84,
+      "inquiries": 4,
+      "contact": "+62 8xx-xxxx-1011",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-11-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik Scooter 155. Bisa bantu cek stok dan warna?",
+          "at": "2026-09-23T06:50:00.000Z"
+        },
+        {
+          "id": "m-11-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Laras. Saya Fajar dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-09-23T07:14:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Instagram masuk",
+          "at": "2026-09-23T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Proposal",
+          "at": "2026-09-23T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1013",
+      "customerId": "C-2013",
+      "name": "Maulana Arif",
+      "channel": "Facebook",
+      "branch": "Manado",
+      "owner": "Nadia",
+      "product": "MPV Family",
+      "stage": "Order",
+      "value": 285000000,
+      "createdAt": "2026-10-13T06:50:00.000Z",
+      "firstReplyMins": 4,
+      "marketingConsent": false,
+      "optedOut": false,
+      "intent": "Minta simulasi cicilan",
+      "score": 91,
+      "inquiries": 1,
+      "contact": "+62 8xx-xxxx-1012",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-12-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik MPV Family. Bisa bantu simulasi cicilan?",
+          "at": "2026-10-13T06:50:00.000Z"
+        },
+        {
+          "id": "m-12-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Maulana. Saya Nadia dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-10-13T06:54:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Facebook masuk",
+          "at": "2026-10-13T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Order",
+          "at": "2026-10-13T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1014",
+      "customerId": "C-2014",
+      "name": "Nabila Sari",
+      "channel": "TikTok",
+      "branch": "Palu",
+      "owner": "Raka",
+      "product": "SUV Urban",
+      "stage": "Won",
+      "value": 340000000,
+      "createdAt": "2026-10-06T06:50:00.000Z",
+      "firstReplyMins": 8,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Jadwalkan test drive",
+      "score": 53,
+      "inquiries": 2,
+      "contact": "+62 8xx-xxxx-1013",
+      "closedAt": "2026-10-06T12:50:00.000Z",
+      "nextAction": "Konfirmasi jadwal serah terima",
+      "messages": [
+        {
+          "id": "m-13-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik SUV Urban. Bisa bantu jadwal test drive?",
+          "at": "2026-10-06T06:50:00.000Z"
+        },
+        {
+          "id": "m-13-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Nabila. Saya Raka dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-10-06T06:58:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari TikTok masuk",
+          "at": "2026-10-06T06:50:00.000Z"
+        },
+        {
+          "text": "Contoh order ERP terverifikasi. Prospecting dihentikan.",
+          "at": "2026-10-06T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1015",
+      "customerId": "C-2015",
+      "name": "Oki Kurniawan",
+      "channel": "Website",
+      "branch": "Kendari",
+      "owner": "Maya",
+      "product": "Scooter 155",
+      "stage": "Lost",
+      "value": 32000000,
+      "createdAt": "2026-09-29T06:50:00.000Z",
+      "firstReplyMins": 11,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Cek stok dan warna",
+      "score": 60,
+      "inquiries": 3,
+      "contact": "+62 8xx-xxxx-1014",
+      "closedAt": null,
+      "nextAction": "Evaluasi alasan kehilangan",
+      "messages": [
+        {
+          "id": "m-14-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik Scooter 155. Bisa bantu cek stok dan warna?",
+          "at": "2026-09-29T06:50:00.000Z"
+        },
+        {
+          "id": "m-14-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Oki. Saya Maya dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-09-29T07:01:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Website masuk",
+          "at": "2026-09-29T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Lost",
+          "at": "2026-09-29T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1016",
+      "customerId": "C-2016",
+      "name": "Putri Amanda",
+      "channel": "WhatsApp",
+      "branch": "Gorontalo",
+      "owner": "Fajar",
+      "product": "MPV Family",
+      "stage": "Nurture",
+      "value": 285000000,
+      "createdAt": "2026-09-22T06:50:00.000Z",
+      "firstReplyMins": 19,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Minta simulasi cicilan",
+      "score": 67,
+      "inquiries": 4,
+      "contact": "+62 8xx-xxxx-1015",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-15-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik MPV Family. Bisa bantu simulasi cicilan?",
+          "at": "2026-09-22T06:50:00.000Z"
+        },
+        {
+          "id": "m-15-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Putri. Saya Fajar dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-09-22T07:09:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari WhatsApp masuk",
+          "at": "2026-09-22T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Nurture",
+          "at": "2026-09-22T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1017",
+      "customerId": "C-2017",
+      "name": "Rizky Firmansyah",
+      "channel": "Instagram",
+      "branch": "Manado",
+      "owner": "Nadia",
+      "product": "SUV Urban",
+      "stage": "New",
+      "value": 340000000,
+      "createdAt": "2026-10-12T06:50:00.000Z",
+      "firstReplyMins": 7,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Jadwalkan test drive",
+      "score": 74,
+      "inquiries": 1,
+      "contact": "+62 8xx-xxxx-1016",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-16-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik SUV Urban. Bisa bantu jadwal test drive?",
+          "at": "2026-10-12T06:50:00.000Z"
+        },
+        {
+          "id": "m-16-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Rizky. Saya Nadia dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-10-12T06:57:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Instagram masuk",
+          "at": "2026-10-12T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: New",
+          "at": "2026-10-12T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1018",
+      "customerId": "C-2018",
+      "name": "Sinta Ayu",
+      "channel": "Facebook",
+      "branch": "Palu",
+      "owner": "Raka",
+      "product": "Scooter 155",
+      "stage": "Qualified",
+      "value": 32000000,
+      "createdAt": "2026-10-05T06:50:00.000Z",
+      "firstReplyMins": 24,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Cek stok dan warna",
+      "score": 81,
+      "inquiries": 2,
+      "contact": "+62 8xx-xxxx-1017",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-17-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik Scooter 155. Bisa bantu cek stok dan warna?",
+          "at": "2026-10-05T06:50:00.000Z"
+        },
+        {
+          "id": "m-17-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Sinta. Saya Raka dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-10-05T07:14:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Facebook masuk",
+          "at": "2026-10-05T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Qualified",
+          "at": "2026-10-05T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1019",
+      "customerId": "C-2019",
+      "name": "Teguh Wibowo",
+      "channel": "TikTok",
+      "branch": "Kendari",
+      "owner": "Maya",
+      "product": "MPV Family",
+      "stage": "Test drive",
+      "value": 285000000,
+      "createdAt": "2026-09-28T06:50:00.000Z",
+      "firstReplyMins": 4,
+      "marketingConsent": false,
+      "optedOut": false,
+      "intent": "Minta simulasi cicilan",
+      "score": 88,
+      "inquiries": 3,
+      "contact": "+62 8xx-xxxx-1018",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-18-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik MPV Family. Bisa bantu simulasi cicilan?",
+          "at": "2026-09-28T06:50:00.000Z"
+        },
+        {
+          "id": "m-18-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Teguh. Saya Maya dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-09-28T06:54:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari TikTok masuk",
+          "at": "2026-09-28T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Test drive",
+          "at": "2026-09-28T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1020",
+      "customerId": "C-2020",
+      "name": "Utami Dewanti",
+      "channel": "Website",
+      "branch": "Gorontalo",
+      "owner": "Fajar",
+      "product": "SUV Urban",
+      "stage": "Proposal",
+      "value": 340000000,
+      "createdAt": "2026-09-21T06:50:00.000Z",
+      "firstReplyMins": 8,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Jadwalkan test drive",
+      "score": 95,
+      "inquiries": 4,
+      "contact": "+62 8xx-xxxx-1019",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-19-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik SUV Urban. Bisa bantu jadwal test drive?",
+          "at": "2026-09-21T06:50:00.000Z"
+        },
+        {
+          "id": "m-19-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Utami. Saya Fajar dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-09-21T06:58:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Website masuk",
+          "at": "2026-09-21T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Proposal",
+          "at": "2026-09-21T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1021",
+      "customerId": "C-2021",
+      "name": "Vino Saputra",
+      "channel": "WhatsApp",
+      "branch": "Manado",
+      "owner": "Nadia",
+      "product": "Scooter 155",
+      "stage": "Order",
+      "value": 32000000,
+      "createdAt": "2026-10-11T06:50:00.000Z",
+      "firstReplyMins": 11,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Cek stok dan warna",
+      "score": 57,
+      "inquiries": 1,
+      "contact": "+62 8xx-xxxx-1020",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-20-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik Scooter 155. Bisa bantu cek stok dan warna?",
+          "at": "2026-10-11T06:50:00.000Z"
+        },
+        {
+          "id": "m-20-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Vino. Saya Nadia dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-10-11T07:01:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari WhatsApp masuk",
+          "at": "2026-10-11T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Order",
+          "at": "2026-10-11T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1022",
+      "customerId": "C-2022",
+      "name": "Wulan Safitri",
+      "channel": "Instagram",
+      "branch": "Palu",
+      "owner": "Raka",
+      "product": "MPV Family",
+      "stage": "Won",
+      "value": 285000000,
+      "createdAt": "2026-10-04T06:50:00.000Z",
+      "firstReplyMins": 19,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Minta simulasi cicilan",
+      "score": 64,
+      "inquiries": 2,
+      "contact": "+62 8xx-xxxx-1021",
+      "closedAt": "2026-10-04T12:50:00.000Z",
+      "nextAction": "Konfirmasi jadwal serah terima",
+      "messages": [
+        {
+          "id": "m-21-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik MPV Family. Bisa bantu simulasi cicilan?",
+          "at": "2026-10-04T06:50:00.000Z"
+        },
+        {
+          "id": "m-21-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Wulan. Saya Raka dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-10-04T07:09:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Instagram masuk",
+          "at": "2026-10-04T06:50:00.000Z"
+        },
+        {
+          "text": "Contoh order ERP terverifikasi. Prospecting dihentikan.",
+          "at": "2026-10-04T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1023",
+      "customerId": "C-2023",
+      "name": "Yuda Prakoso",
+      "channel": "Facebook",
+      "branch": "Kendari",
+      "owner": "Maya",
+      "product": "SUV Urban",
+      "stage": "Lost",
+      "value": 340000000,
+      "createdAt": "2026-09-27T06:50:00.000Z",
+      "firstReplyMins": 7,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Jadwalkan test drive",
+      "score": 71,
+      "inquiries": 3,
+      "contact": "+62 8xx-xxxx-1022",
+      "closedAt": null,
+      "nextAction": "Evaluasi alasan kehilangan",
+      "messages": [
+        {
+          "id": "m-22-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik SUV Urban. Bisa bantu jadwal test drive?",
+          "at": "2026-09-27T06:50:00.000Z"
+        },
+        {
+          "id": "m-22-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Yuda. Saya Maya dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-09-27T06:57:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Facebook masuk",
+          "at": "2026-09-27T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Lost",
+          "at": "2026-09-27T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1024",
+      "customerId": "C-2024",
+      "name": "Zahra Anindya",
+      "channel": "TikTok",
+      "branch": "Gorontalo",
+      "owner": "Fajar",
+      "product": "Scooter 155",
+      "stage": "Nurture",
+      "value": 32000000,
+      "createdAt": "2026-09-20T06:50:00.000Z",
+      "firstReplyMins": 24,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Cek stok dan warna",
+      "score": 78,
+      "inquiries": 4,
+      "contact": "+62 8xx-xxxx-1023",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-23-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik Scooter 155. Bisa bantu cek stok dan warna?",
+          "at": "2026-09-20T06:50:00.000Z"
+        },
+        {
+          "id": "m-23-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Zahra. Saya Fajar dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-09-20T07:14:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari TikTok masuk",
+          "at": "2026-09-20T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Nurture",
+          "at": "2026-09-20T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1025",
+      "customerId": "C-2025",
+      "name": "Ardi Nugraha",
+      "channel": "Website",
+      "branch": "Manado",
+      "owner": "Nadia",
+      "product": "MPV Family",
+      "stage": "New",
+      "value": 285000000,
+      "createdAt": "2026-10-10T06:50:00.000Z",
+      "firstReplyMins": 4,
+      "marketingConsent": false,
+      "optedOut": false,
+      "intent": "Minta simulasi cicilan",
+      "score": 85,
+      "inquiries": 1,
+      "contact": "+62 8xx-xxxx-1024",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-24-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik MPV Family. Bisa bantu simulasi cicilan?",
+          "at": "2026-10-10T06:50:00.000Z"
+        },
+        {
+          "id": "m-24-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Ardi. Saya Nadia dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-10-10T06:54:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Website masuk",
+          "at": "2026-10-10T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: New",
+          "at": "2026-10-10T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1026",
+      "customerId": "C-2026",
+      "name": "Bella Kirana",
+      "channel": "WhatsApp",
+      "branch": "Palu",
+      "owner": "Raka",
+      "product": "SUV Urban",
+      "stage": "Qualified",
+      "value": 340000000,
+      "createdAt": "2026-10-03T06:50:00.000Z",
+      "firstReplyMins": 8,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Jadwalkan test drive",
+      "score": 92,
+      "inquiries": 2,
+      "contact": "+62 8xx-xxxx-1025",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-25-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik SUV Urban. Bisa bantu jadwal test drive?",
+          "at": "2026-10-03T06:50:00.000Z"
+        },
+        {
+          "id": "m-25-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Bella. Saya Raka dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-10-03T06:58:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari WhatsApp masuk",
+          "at": "2026-10-03T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Qualified",
+          "at": "2026-10-03T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1027",
+      "customerId": "C-2027",
+      "name": "Dimas Putra",
+      "channel": "Instagram",
+      "branch": "Kendari",
+      "owner": "Maya",
+      "product": "Scooter 155",
+      "stage": "Test drive",
+      "value": 32000000,
+      "createdAt": "2026-09-26T06:50:00.000Z",
+      "firstReplyMins": 11,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Cek stok dan warna",
+      "score": 54,
+      "inquiries": 3,
+      "contact": "+62 8xx-xxxx-1026",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-26-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik Scooter 155. Bisa bantu cek stok dan warna?",
+          "at": "2026-09-26T06:50:00.000Z"
+        },
+        {
+          "id": "m-26-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Dimas. Saya Maya dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-09-26T07:01:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Instagram masuk",
+          "at": "2026-09-26T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Test drive",
+          "at": "2026-09-26T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1028",
+      "customerId": "C-2028",
+      "name": "Elsa Wati",
+      "channel": "Facebook",
+      "branch": "Gorontalo",
+      "owner": "Fajar",
+      "product": "MPV Family",
+      "stage": "Proposal",
+      "value": 285000000,
+      "createdAt": "2026-10-16T06:50:00.000Z",
+      "firstReplyMins": 19,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Minta simulasi cicilan",
+      "score": 61,
+      "inquiries": 4,
+      "contact": "+62 8xx-xxxx-1027",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-27-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik MPV Family. Bisa bantu simulasi cicilan?",
+          "at": "2026-10-16T06:50:00.000Z"
+        },
+        {
+          "id": "m-27-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Elsa. Saya Fajar dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-10-16T07:09:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Facebook masuk",
+          "at": "2026-10-16T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Proposal",
+          "at": "2026-10-16T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1029",
+      "customerId": "C-2029",
+      "name": "Fikri Hidayat",
+      "channel": "TikTok",
+      "branch": "Manado",
+      "owner": "Nadia",
+      "product": "SUV Urban",
+      "stage": "Order",
+      "value": 340000000,
+      "createdAt": "2026-10-09T06:50:00.000Z",
+      "firstReplyMins": 7,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Jadwalkan test drive",
+      "score": 68,
+      "inquiries": 1,
+      "contact": "+62 8xx-xxxx-1028",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-28-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik SUV Urban. Bisa bantu jadwal test drive?",
+          "at": "2026-10-09T06:50:00.000Z"
+        },
+        {
+          "id": "m-28-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Fikri. Saya Nadia dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-10-09T06:57:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari TikTok masuk",
+          "at": "2026-10-09T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Order",
+          "at": "2026-10-09T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1030",
+      "customerId": "C-2030",
+      "name": "Gita Rahayu",
+      "channel": "Website",
+      "branch": "Palu",
+      "owner": "Raka",
+      "product": "Scooter 155",
+      "stage": "Won",
+      "value": 32000000,
+      "createdAt": "2026-10-02T06:50:00.000Z",
+      "firstReplyMins": 24,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Cek stok dan warna",
+      "score": 75,
+      "inquiries": 2,
+      "contact": "+62 8xx-xxxx-1029",
+      "closedAt": "2026-10-02T12:50:00.000Z",
+      "nextAction": "Konfirmasi jadwal serah terima",
+      "messages": [
+        {
+          "id": "m-29-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik Scooter 155. Bisa bantu cek stok dan warna?",
+          "at": "2026-10-02T06:50:00.000Z"
+        },
+        {
+          "id": "m-29-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Gita. Saya Raka dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-10-02T07:14:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Website masuk",
+          "at": "2026-10-02T06:50:00.000Z"
+        },
+        {
+          "text": "Contoh order ERP terverifikasi. Prospecting dihentikan.",
+          "at": "2026-10-02T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1031",
+      "customerId": "C-2031",
+      "name": "Hadi Susanto",
+      "channel": "WhatsApp",
+      "branch": "Kendari",
+      "owner": "Maya",
+      "product": "MPV Family",
+      "stage": "Lost",
+      "value": 285000000,
+      "createdAt": "2026-09-25T06:50:00.000Z",
+      "firstReplyMins": 4,
+      "marketingConsent": false,
+      "optedOut": false,
+      "intent": "Minta simulasi cicilan",
+      "score": 82,
+      "inquiries": 3,
+      "contact": "+62 8xx-xxxx-1030",
+      "closedAt": null,
+      "nextAction": "Evaluasi alasan kehilangan",
+      "messages": [
+        {
+          "id": "m-30-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik MPV Family. Bisa bantu simulasi cicilan?",
+          "at": "2026-09-25T06:50:00.000Z"
+        },
+        {
+          "id": "m-30-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Hadi. Saya Maya dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-09-25T06:54:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari WhatsApp masuk",
+          "at": "2026-09-25T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Lost",
+          "at": "2026-09-25T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1032",
+      "customerId": "C-2032",
+      "name": "Intan Melati",
+      "channel": "Instagram",
+      "branch": "Gorontalo",
+      "owner": "Fajar",
+      "product": "SUV Urban",
+      "stage": "Nurture",
+      "value": 340000000,
+      "createdAt": "2026-10-15T06:50:00.000Z",
+      "firstReplyMins": 8,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Jadwalkan test drive",
+      "score": 89,
+      "inquiries": 4,
+      "contact": "+62 8xx-xxxx-1031",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-31-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik SUV Urban. Bisa bantu jadwal test drive?",
+          "at": "2026-10-15T06:50:00.000Z"
+        },
+        {
+          "id": "m-31-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Intan. Saya Fajar dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-10-15T06:58:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Instagram masuk",
+          "at": "2026-10-15T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Nurture",
+          "at": "2026-10-15T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1033",
+      "customerId": "C-2033",
+      "name": "Joko Purnomo",
+      "channel": "Facebook",
+      "branch": "Manado",
+      "owner": "Nadia",
+      "product": "Scooter 155",
+      "stage": "New",
+      "value": 32000000,
+      "createdAt": "2026-10-08T06:50:00.000Z",
+      "firstReplyMins": 11,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Cek stok dan warna",
+      "score": 96,
+      "inquiries": 1,
+      "contact": "+62 8xx-xxxx-1032",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-32-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik Scooter 155. Bisa bantu cek stok dan warna?",
+          "at": "2026-10-08T06:50:00.000Z"
+        },
+        {
+          "id": "m-32-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Joko. Saya Nadia dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-10-08T07:01:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Facebook masuk",
+          "at": "2026-10-08T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: New",
+          "at": "2026-10-08T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1034",
+      "customerId": "C-2034",
+      "name": "Karina Dewi",
+      "channel": "TikTok",
+      "branch": "Palu",
+      "owner": "Raka",
+      "product": "MPV Family",
+      "stage": "Qualified",
+      "value": 285000000,
+      "createdAt": "2026-10-01T06:50:00.000Z",
+      "firstReplyMins": 19,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Minta simulasi cicilan",
+      "score": 58,
+      "inquiries": 2,
+      "contact": "+62 8xx-xxxx-1033",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-33-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik MPV Family. Bisa bantu simulasi cicilan?",
+          "at": "2026-10-01T06:50:00.000Z"
+        },
+        {
+          "id": "m-33-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Karina. Saya Raka dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-10-01T07:09:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari TikTok masuk",
+          "at": "2026-10-01T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Qualified",
+          "at": "2026-10-01T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1035",
+      "customerId": "C-2035",
+      "name": "Lukman Hakim",
+      "channel": "Website",
+      "branch": "Kendari",
+      "owner": "Maya",
+      "product": "SUV Urban",
+      "stage": "Test drive",
+      "value": 340000000,
+      "createdAt": "2026-09-24T06:50:00.000Z",
+      "firstReplyMins": 7,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Jadwalkan test drive",
+      "score": 65,
+      "inquiries": 3,
+      "contact": "+62 8xx-xxxx-1034",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-34-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik SUV Urban. Bisa bantu jadwal test drive?",
+          "at": "2026-09-24T06:50:00.000Z"
+        },
+        {
+          "id": "m-34-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Lukman. Saya Maya dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-09-24T06:57:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari Website masuk",
+          "at": "2026-09-24T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Test drive",
+          "at": "2026-09-24T06:50:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "L-1036",
+      "customerId": "C-2036",
+      "name": "Mega Puspita",
+      "channel": "WhatsApp",
+      "branch": "Gorontalo",
+      "owner": "Fajar",
+      "product": "Scooter 155",
+      "stage": "Proposal",
+      "value": 32000000,
+      "createdAt": "2026-10-14T06:50:00.000Z",
+      "firstReplyMins": 24,
+      "marketingConsent": true,
+      "optedOut": false,
+      "intent": "Cek stok dan warna",
+      "score": 72,
+      "inquiries": 4,
+      "contact": "+62 8xx-xxxx-1035",
+      "closedAt": null,
+      "nextAction": "Konfirmasi kebutuhan dan waktu dihubungi",
+      "messages": [
+        {
+          "id": "m-35-1",
+          "direction": "in",
+          "text": "Halo, saya tertarik Scooter 155. Bisa bantu cek stok dan warna?",
+          "at": "2026-10-14T06:50:00.000Z"
+        },
+        {
+          "id": "m-35-2",
+          "direction": "out",
+          "text": "Selamat siang, Bapak/Ibu Mega. Saya Fajar dari tim sales. Boleh saya konfirmasi kebutuhan Anda?",
+          "at": "2026-10-14T07:14:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "text": "Inquiry dari WhatsApp masuk",
+          "at": "2026-10-14T06:50:00.000Z"
+        },
+        {
+          "text": "Status saat snapshot: Proposal",
+          "at": "2026-10-14T06:50:00.000Z"
+        }
+      ]
+    }
+  ],
+  "activity": [],
+  "ingestedEvents": [],
+  "health": {
+    "erp": true
+  },
+  "rules": {
+    "routing": true,
+    "sla": true,
+    "aftersales": true
+  },
+  "campaigns": [],
+  "lastSyncAt": "2026-10-17T07:30:00.000Z"
+}

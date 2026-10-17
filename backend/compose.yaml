@@ -1,0 +1,31 @@
+name: hasjrat-onecrm-assessment
+services:
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_DATABASE: onecrm_demo
+      MYSQL_USER: onecrm
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Set MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Set MYSQL_ROOT_PASSWORD}
+    ports: ["127.0.0.1:3307:3306"]
+    volumes: ["onecrm_mysql:/var/lib/mysql"]
+    healthcheck:
+      test: ["CMD-SHELL", "MYSQL_PWD=$$MYSQL_PASSWORD mysqladmin ping -h 127.0.0.1 -u onecrm --silent"]
+      interval: 5s
+      retries: 20
+    restart: unless-stopped
+  api:
+    build: .
+    environment:
+      MYSQL_DSN: onecrm:${MYSQL_PASSWORD}@tcp(mysql:3306)/onecrm_demo?parseTime=true&charset=utf8mb4
+      DEMO_API_TOKEN: ${DEMO_API_TOKEN:?Set DEMO_API_TOKEN}
+      DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY:-}
+      DEEPSEEK_MODEL: ${DEEPSEEK_MODEL:-deepseek-flash}
+      LISTEN_ADDR: 0.0.0.0:8080
+      CORS_ORIGINS: http://localhost:4173,http://127.0.0.1:4173
+    ports: ["127.0.0.1:8080:8080"]
+    depends_on:
+      mysql: {condition: service_healthy}
+    restart: unless-stopped
+volumes:
+  onecrm_mysql:
