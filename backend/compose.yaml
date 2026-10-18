@@ -21,11 +21,43 @@ services:
       DEMO_API_TOKEN: ${DEMO_API_TOKEN:?Set DEMO_API_TOKEN}
       DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY:-}
       DEEPSEEK_MODEL: ${DEEPSEEK_MODEL:-deepseek-flash}
+      # Optional sales reporting (profile "sales"). Empty keeps /api/sales/dashboard at 503 and the UI on its simulation.
+      MSSQL_DSN: ${MSSQL_DSN:-}
       LISTEN_ADDR: 0.0.0.0:8080
       CORS_ORIGINS: http://localhost:4173,http://127.0.0.1:4173
     ports: ["127.0.0.1:8080:8080"]
     depends_on:
       mysql: {condition: service_healthy}
     restart: unless-stopped
+  # MS SQL Server reporting mart for the Sales Dashboard: docker compose --profile sales up --build
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    profiles: ["sales"]
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Developer
+      MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD:-}
+    ports: ["127.0.0.1:14333:1433"]
+    volumes: ["onecrm_mssql:/var/opt/mssql"]
+    healthcheck:
+      test: ["CMD-SHELL", "SQLCMDPASSWORD=\"$$MSSQL_SA_PASSWORD\" /opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -Q 'SELECT 1' -b -o /dev/null"]
+      interval: 10s
+      retries: 30
+      start_period: 20s
+    restart: unless-stopped
+  # One-shot: schema, procedure, least-privilege login and synthetic seed (backend/sql/mssql/001-004).
+  mssql-init:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    profiles: ["sales"]
+    depends_on:
+      mssql: {condition: service_healthy}
+    environment:
+      SQLCMDPASSWORD: ${MSSQL_SA_PASSWORD:-}
+      MSSQL_API_PASSWORD: ${MSSQL_API_PASSWORD:-}
+    volumes: ["./sql/mssql:/sql:ro"]
+    entrypoint: ["/bin/bash", "-c"]
+    command: ["set -e; for f in /sql/0*.sql; do echo \"applying $$f\"; /opt/mssql-tools18/bin/sqlcmd -C -b -I -S mssql -U sa -v ApiPassword=\"$$MSSQL_API_PASSWORD\" -i \"$$f\"; done"]
+    restart: "no"
 volumes:
   onecrm_mysql:
+  onecrm_mssql:

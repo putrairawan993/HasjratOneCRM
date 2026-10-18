@@ -1,0 +1,46 @@
+'use client';
+import {useState} from 'react';
+import {Icon, Tag} from './ui';
+
+// P1–P7 refer to the seven problems in the assessment scenario (see Assessment Brief · Task 1).
+const PROBLEMS:Record<string,string> = {P1:'Follow-up terlambat', P2:'Customer mengulang informasi', P3:'Tidak ada visibilitas real-time', P4:'Data di HP pribadi', P5:'Tanpa standar journey', P6:'Broadcast manual', P7:'Komunikasi tidak relevan'};
+const USE_CASES = [
+  {title:'Ekstraksi intent & kebutuhan', phase:'Pilot', problems:['P1', 'P2'], input:'Pesan masuk WA/IG/FB/TikTok', output:'JSON: model, budget, cash/kredit, waktu beli, lokasi → field lead terisi', guardrail:'Skema JSON divalidasi; confidence rendah → sales bertanya ulang', kpi:'% lead terkualifikasi otomatis'},
+  {title:'Ringkasan percakapan saat handover', phase:'Pilot', problems:['P2'], input:'Riwayat lintas channel di Customer 360°', output:'Ringkasan 5 poin + pertanyaan terbuka untuk sales berikutnya', guardrail:'Setiap poin menaut ke pesan sumber; tanpa menyimpulkan harga', kpi:'Customer mengulang info < 5%'},
+  {title:'Draft balasan berbasis knowledge base', phase:'Pilot', problems:['P1'], input:'Pertanyaan customer + price list, promo, stok resmi (MS SQL)', output:'Draft balasan dengan rujukan sumber data', guardrail:'Hanya data resmi (RAG); review sales wajib; tidak auto-send', kpi:'Median waktu respons manusia'},
+  {title:'Bot kualifikasi di luar jam kerja', phase:'Fase 2', problems:['P1'], input:'Inquiry 18.00–08.00 dan hari libur', output:'Kebutuhan & jadwal terkumpul, antre ke sales shift pagi', guardrail:'Bot mengaku bot, tombol "bicara dengan sales", tanpa negosiasi', kpi:'% inquiry malam siap ditindaklanjuti pukul 08.00'},
+  {title:'Lead scoring', phase:'Fase 2', problems:['P1', 'P3'], input:'Atribut lead, sumber, perilaku, histori SPK', output:'Skor Hot / Warm / Cold untuk prioritas antrean', guardrail:'Mulai rules transparan, lalu ML; tanpa atribut sensitif; pantau drift', kpi:'Lift konversi Hot vs rata-rata'},
+  {title:'Next-best-action & jam kirim', phase:'Fase 2', problems:['P5'], input:'Stage, respons terakhir, jam aktif customer', output:'Rekomendasi tindakan & waktu follow-up berikutnya', guardrail:'Tetap tunduk cadence, opt-out, dan frequency cap', kpi:'Reply rate follow-up'},
+  {title:'Sentimen & deteksi komplain', phase:'Fase 2', problems:['P3'], input:'Pesan masuk dan survey CSAT', output:'Label komplain/urgent → eskalasi supervisor', guardrail:'Threshold konservatif; keputusan tetap manusia', kpi:'Waktu penanganan komplain'},
+  {title:'Segmentasi & variasi copy campaign', phase:'Fase 2', problems:['P6', 'P7'], input:'Segmen stage, minat, consent', output:'2–3 variasi copy untuk A/B test', guardrail:'Approval marketing + template Meta; suppression pembeli tetap wajib', kpi:'Reply/CTR dan opt-out rate'},
+  {title:'Deteksi anomali & kualitas data', phase:'Fase 2', problems:['P3', 'P4'], input:'Lead, SPK, diskon, aktivitas sales', output:'Alert duplikat, diskon tidak wajar, lead tanpa aktivitas', guardrail:'Alert ke supervisor, bukan sanksi otomatis', kpi:'Duplicate rate & lead tanpa owner'},
+  {title:'Forecast SPK/DO & stok', phase:'Fase 3', problems:['P3'], input:'Histori SPK/DO, pipeline, musim, promo', output:'Forecast per cabang/model + rekomendasi alokasi', guardrail:'Ditampilkan dengan rentang keyakinan; bukan pengganti target', kpi:'MAPE forecast bulanan'},
+  {title:'"Tanya data" untuk manajemen', phase:'Fase 3', problems:['P3'], input:'Pertanyaan bahasa alami', output:'SQL read-only pada view rpt + jawaban & query ditampilkan', guardrail:'Whitelist view, login read-only, batas baris, RLS cabang', kpi:'Pertanyaan terjawab tanpa tiket IT'},
+  {title:'OCR dokumen kredit', phase:'Fase 3', problems:['P5'], input:'Foto KTP, KK, NPWP, slip gaji', output:'Field aplikasi leasing terisi + checklist kelengkapan', guardrail:'Enkripsi, retensi terbatas, verifikasi manusia, UU PDP', kpi:'Waktu SPK → approval leasing'},
+  {title:'Voice note → aktivitas CRM', phase:'Fase 3', problems:['P4', 'P5'], input:'Voice note sales setelah telepon/kunjungan', output:'Transkrip, ringkasan, dan next step di timeline', guardrail:'Consent rekaman; sales mengonfirmasi sebelum simpan', kpi:'% aktivitas tercatat di CRM'}
+];
+const PHASES = ['Semua', 'Pilot', 'Fase 2', 'Fase 3'];
+
+export default function AiPlaybook({go}:{go:(view:string)=>void}) {
+  const [phase, setPhase] = useState('Semua');
+  const shown = USE_CASES.filter(u => phase === 'Semua' || u.phase === phase);
+  return <>
+    <section className="campaign-hero ai-hero"><div><Tag tone="positive">AI SEBAGAI CO-PILOT SALES</Tag><h2>Mempercepat sales.<br/>Keputusan tetap di manusia.</h2><p>AI dipakai di titik yang paling mahal bila lambat atau hilang: memahami inquiry, menyiapkan balasan, menjaga konteks lintas channel, dan membaca data penjualan. Fondasinya tetap aturan bisnis yang deterministik dan data yang bersih.</p></div><div className="principles">{[['shield', 'Human-in-the-loop', 'Tidak ada auto-send ke customer di fase awal'], ['people', 'Data minimal', 'Nama, nomor, dan isi chat tidak dikirim tanpa masking'], ['check', 'Terukur', 'Golden set, A/B per cabang, log teraudit']].map(([icon, title, text]) => <div key={title}><Icon name={icon} size={18}/><span><b>{title}</b><small>{text}</small></span></div>)}</div></section>
+    <section className="panel panel-body applied"><div className="applied-heading"><div><div className="eyebrow teal">SUDAH DITERAPKAN DI PROTOTYPE INI</div><h2>Draft follow-up WhatsApp dengan DeepSeek</h2><p>Berjalan nyata melalui Go API ketika API key tersedia di server. Tanpa key, sistem memakai template lokal yang diberi label jelas.</p></div><button className="button primary" onClick={() => go('inbox')}>Coba di Omnichannel Inbox<Icon name="arrow" size={16}/></button></div><div className="data-flow">{[
+      {title:'Sales memicu', text:'Tombol "Draft dengan DeepSeek" di Inbox, per lead.'},
+      {title:'Go API menyaring', text:'Hanya label produk & intent yang keluar server. Nama, nomor, chat mentah tidak.'},
+      {title:'Prompt berpagar', text:'Dilarang mengarang harga, diskon, stok, kredit, atau janji. Maks. 100 kata.'},
+      {title:'DeepSeek', text:'API key hanya di backend; timeout 25 detik; batas ukuran respons.'},
+      {title:'Review sales', text:'Draft diedit dan dicatat manual. Tidak ada pengiriman otomatis.'},
+      {title:'Gagal dengan aman', text:'Pesan jelas untuk 401/402/429; sales tetap bisa menulis manual.'}
+    ].map((n, i) => <div key={n.title}><span className="flow-index">{String(i + 1).padStart(2, '0')}</span><b>{n.title}</b><p>{n.text}</p></div>)}</div><div className="info-note"><Icon name="shield"/><span>Routing, SLA, dan suppression pembeli di demo ini adalah aturan bisnis deterministik, bukan AI. Itu disengaja: AI ditambahkan di atas proses yang sudah terukur, bukan menggantikannya.</span></div></section>
+    <section className="panel"><div className="panel-heading"><div><h2>Portofolio use case AI untuk OneCRM</h2><p>Dipetakan ke masalah pada skenario (P1–P7) dan ditahapkan menurut risiko serta kesiapan data</p></div><div className="segmented" role="group" aria-label="Filter fase">{PHASES.map(p => <button key={p} aria-pressed={phase === p} onClick={() => setPhase(p)}>{p}</button>)}</div></div><div className="usecase-grid">{shown.map(u => <article key={u.title} className="usecase"><div className="usecase-top"><Tag tone={u.phase === 'Pilot' ? 'positive' : u.phase === 'Fase 2' ? 'blue' : 'neutral'}>{u.phase}</Tag><span>{u.problems.map(p => <abbr key={p} title={PROBLEMS[p]}>{p}</abbr>)}</span></div><h3>{u.title}</h3><dl><dt>Input</dt><dd>{u.input}</dd><dt>Output</dt><dd>{u.output}</dd><dt>Guardrail</dt><dd>{u.guardrail}</dd><dt>KPI</dt><dd>{u.kpi}</dd></dl></article>)}</div><div className="panel-footer">{Object.entries(PROBLEMS).map(([k, v]) => `${k} ${v}`).join(' · ')}</div></section>
+    <div className="dashboard-grid"><section className="panel panel-body"><h2>Arsitektur AI gateway</h2><p>Semua pemanggilan model lewat satu layanan di backend, sehingga kebijakan, biaya, dan vendor dapat dikendalikan di satu tempat.</p><div className="layer-stack">{[
+      {title:'Aplikasi OneCRM', text:'Inbox, Customer 360°, campaign, dashboard'},
+      {title:'Go AI gateway', text:'Masking PII · template prompt · policy · rate limit · log & biaya'},
+      {title:'Konteks resmi (RAG)', text:'Katalog produk, price list, promo, stok dari MS SQL'},
+      {title:'Penyedia model', text:'DeepSeek hari ini; model lain atau on-premise dapat diganti'}
+    ].map(l => <div key={l.title}><b>{l.title}</b><span>{l.text}</span></div>)}</div></section>
+      <section className="panel panel-body"><h2>Tata kelola</h2><ul className="check-list">{['AI menyarankan, sales memutuskan. Auto-send hanya setelah akurasi terbukti dan disetujui.', 'Harga, stok, promo, dan kredit hanya dari sumber resmi. Model tidak boleh mengarang.', 'Golden set percakapan berlabel untuk mengukur akurasi dan halusinasi sebelum rollout.', 'Masking PII, kontrak pemrosesan data (DPA), data tidak dipakai melatih model vendor.', 'Kepatuhan UU PDP No. 27/2022 dan kebijakan WhatsApp Business.', 'Anggaran token per bulan, rate limit, dan fallback manual saat layanan AI gagal.'].map(x => <li key={x}><Icon name="check" size={15}/>{x}</li>)}</ul></section></div>
+  </>;
+}
