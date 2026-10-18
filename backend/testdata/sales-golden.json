@@ -1,0 +1,1585 @@
+{
+  "generatedFrom": "seedSales() + salesDashboard() in lib/sales.ts",
+  "cases": [
+    {
+      "filter": {
+        "from": "2026-10-01",
+        "to": "2026-10-17"
+      },
+      "expected": {
+        "source": "simulation",
+        "asOf": "2026-10-17T07:30:00.000Z",
+        "from": "2026-10-01",
+        "to": "2026-10-17",
+        "branch": null,
+        "kpi": {
+          "spk": 219,
+          "delivered": 205,
+          "revenue": 26870800000,
+          "cancelled": 17,
+          "target": 399,
+          "outstanding": 132,
+          "credit": 140,
+          "leads": 4299
+        },
+        "trend": [
+          {
+            "month": "2026-05",
+            "spk": 326,
+            "delivered": 202,
+            "target": 342
+          },
+          {
+            "month": "2026-06",
+            "spk": 343,
+            "delivered": 300,
+            "target": 355
+          },
+          {
+            "month": "2026-07",
+            "spk": 362,
+            "delivered": 345,
+            "target": 366
+          },
+          {
+            "month": "2026-08",
+            "spk": 361,
+            "delivered": 326,
+            "target": 377
+          },
+          {
+            "month": "2026-09",
+            "spk": 373,
+            "delivered": 341,
+            "target": 388
+          },
+          {
+            "month": "2026-10",
+            "spk": 219,
+            "delivered": 205,
+            "target": 399
+          }
+        ],
+        "branches": [
+          {
+            "branch": "Manado",
+            "spk": 72,
+            "delivered": 68,
+            "revenue": 9607800000,
+            "target": 127
+          },
+          {
+            "branch": "Palu",
+            "spk": 60,
+            "delivered": 53,
+            "revenue": 7195700000,
+            "target": 105
+          },
+          {
+            "branch": "Kendari",
+            "spk": 47,
+            "delivered": 41,
+            "revenue": 4304900000,
+            "target": 81
+          },
+          {
+            "branch": "Gorontalo",
+            "spk": 40,
+            "delivered": 43,
+            "revenue": 5762400000,
+            "target": 86
+          }
+        ],
+        "products": [
+          {
+            "product": "MPV Family",
+            "spk": 51,
+            "delivered": 48,
+            "revenue": 13437000000,
+            "target": 103
+          },
+          {
+            "product": "SUV Urban",
+            "spk": 32,
+            "delivered": 28,
+            "revenue": 9367300000,
+            "target": 60
+          },
+          {
+            "product": "Scooter 155",
+            "spk": 136,
+            "delivered": 129,
+            "revenue": 4066500000,
+            "target": 236
+          }
+        ],
+        "salespeople": [
+          {
+            "name": "Nadia",
+            "branch": "Manado",
+            "spk": 44,
+            "delivered": 44,
+            "revenue": 6454900000
+          },
+          {
+            "name": "Raka",
+            "branch": "Palu",
+            "spk": 42,
+            "delivered": 36,
+            "revenue": 5067500000
+          },
+          {
+            "name": "Dodi",
+            "branch": "Gorontalo",
+            "spk": 23,
+            "delivered": 28,
+            "revenue": 3145500000
+          },
+          {
+            "name": "Maya",
+            "branch": "Kendari",
+            "spk": 29,
+            "delivered": 25,
+            "revenue": 2633700000
+          },
+          {
+            "name": "Rani",
+            "branch": "Manado",
+            "spk": 28,
+            "delivered": 24,
+            "revenue": 3152900000
+          },
+          {
+            "name": "Bayu",
+            "branch": "Palu",
+            "spk": 18,
+            "delivered": 17,
+            "revenue": 2128200000
+          },
+          {
+            "name": "Sari",
+            "branch": "Kendari",
+            "spk": 18,
+            "delivered": 16,
+            "revenue": 1671200000
+          },
+          {
+            "name": "Fajar",
+            "branch": "Gorontalo",
+            "spk": 17,
+            "delivered": 15,
+            "revenue": 2616900000
+          }
+        ],
+        "channels": [
+          {
+            "channel": "WhatsApp",
+            "leads": 2394,
+            "spk": 82,
+            "delivered": 82
+          },
+          {
+            "channel": "Instagram",
+            "leads": 550,
+            "spk": 28,
+            "delivered": 25
+          },
+          {
+            "channel": "Facebook",
+            "leads": 412,
+            "spk": 17,
+            "delivered": 12
+          },
+          {
+            "channel": "TikTok",
+            "leads": 343,
+            "spk": 18,
+            "delivered": 15
+          },
+          {
+            "channel": "Website",
+            "leads": 346,
+            "spk": 24,
+            "delivered": 20
+          },
+          {
+            "channel": "Walk-in",
+            "leads": 254,
+            "spk": 50,
+            "delivered": 51
+          }
+        ]
+      }
+    },
+    {
+      "filter": {
+        "from": "2026-10-01",
+        "to": "2026-10-17",
+        "branch": "Palu"
+      },
+      "expected": {
+        "source": "simulation",
+        "asOf": "2026-10-17T07:30:00.000Z",
+        "from": "2026-10-01",
+        "to": "2026-10-17",
+        "branch": "Palu",
+        "kpi": {
+          "spk": 60,
+          "delivered": 53,
+          "revenue": 7195700000,
+          "cancelled": 5,
+          "target": 105,
+          "outstanding": 37,
+          "credit": 33,
+          "leads": 1104
+        },
+        "trend": [
+          {
+            "month": "2026-05",
+            "spk": 83,
+            "delivered": 48,
+            "target": 91
+          },
+          {
+            "month": "2026-06",
+            "spk": 96,
+            "delivered": 78,
+            "target": 93
+          },
+          {
+            "month": "2026-07",
+            "spk": 95,
+            "delivered": 96,
+            "target": 97
+          },
+          {
+            "month": "2026-08",
+            "spk": 89,
+            "delivered": 81,
+            "target": 100
+          },
+          {
+            "month": "2026-09",
+            "spk": 98,
+            "delivered": 90,
+            "target": 102
+          },
+          {
+            "month": "2026-10",
+            "spk": 60,
+            "delivered": 53,
+            "target": 105
+          }
+        ],
+        "branches": [
+          {
+            "branch": "Palu",
+            "spk": 60,
+            "delivered": 53,
+            "revenue": 7195700000,
+            "target": 105
+          }
+        ],
+        "products": [
+          {
+            "product": "MPV Family",
+            "spk": 14,
+            "delivered": 15,
+            "revenue": 4182000000,
+            "target": 27
+          },
+          {
+            "product": "SUV Urban",
+            "spk": 11,
+            "delivered": 6,
+            "revenue": 2004600000,
+            "target": 16
+          },
+          {
+            "product": "Scooter 155",
+            "spk": 35,
+            "delivered": 32,
+            "revenue": 1009100000,
+            "target": 62
+          }
+        ],
+        "salespeople": [
+          {
+            "name": "Raka",
+            "branch": "Palu",
+            "spk": 42,
+            "delivered": 36,
+            "revenue": 5067500000
+          },
+          {
+            "name": "Bayu",
+            "branch": "Palu",
+            "spk": 18,
+            "delivered": 17,
+            "revenue": 2128200000
+          }
+        ],
+        "channels": [
+          {
+            "channel": "WhatsApp",
+            "leads": 619,
+            "spk": 25,
+            "delivered": 20
+          },
+          {
+            "channel": "Instagram",
+            "leads": 142,
+            "spk": 8,
+            "delivered": 9
+          },
+          {
+            "channel": "Facebook",
+            "leads": 102,
+            "spk": 1,
+            "delivered": 1
+          },
+          {
+            "channel": "TikTok",
+            "leads": 83,
+            "spk": 6,
+            "delivered": 5
+          },
+          {
+            "channel": "Website",
+            "leads": 90,
+            "spk": 7,
+            "delivered": 9
+          },
+          {
+            "channel": "Walk-in",
+            "leads": 68,
+            "spk": 13,
+            "delivered": 9
+          }
+        ]
+      }
+    },
+    {
+      "filter": {
+        "from": "2026-08-01",
+        "to": "2026-10-17"
+      },
+      "expected": {
+        "source": "simulation",
+        "asOf": "2026-10-17T07:30:00.000Z",
+        "from": "2026-08-01",
+        "to": "2026-10-17",
+        "branch": null,
+        "kpi": {
+          "spk": 953,
+          "delivered": 872,
+          "revenue": 119931200000,
+          "cancelled": 73,
+          "target": 1164,
+          "outstanding": 132,
+          "credit": 584,
+          "leads": 18613
+        },
+        "trend": [
+          {
+            "month": "2026-05",
+            "spk": 326,
+            "delivered": 202,
+            "target": 342
+          },
+          {
+            "month": "2026-06",
+            "spk": 343,
+            "delivered": 300,
+            "target": 355
+          },
+          {
+            "month": "2026-07",
+            "spk": 362,
+            "delivered": 345,
+            "target": 366
+          },
+          {
+            "month": "2026-08",
+            "spk": 361,
+            "delivered": 326,
+            "target": 377
+          },
+          {
+            "month": "2026-09",
+            "spk": 373,
+            "delivered": 341,
+            "target": 388
+          },
+          {
+            "month": "2026-10",
+            "spk": 219,
+            "delivered": 205,
+            "target": 399
+          }
+        ],
+        "branches": [
+          {
+            "branch": "Manado",
+            "spk": 322,
+            "delivered": 295,
+            "revenue": 40933400000,
+            "target": 369
+          },
+          {
+            "branch": "Palu",
+            "spk": 247,
+            "delivered": 224,
+            "revenue": 31140300000,
+            "target": 307
+          },
+          {
+            "branch": "Kendari",
+            "spk": 206,
+            "delivered": 188,
+            "revenue": 26231000000,
+            "target": 235
+          },
+          {
+            "branch": "Gorontalo",
+            "spk": 178,
+            "delivered": 165,
+            "revenue": 21626500000,
+            "target": 253
+          }
+        ],
+        "products": [
+          {
+            "product": "MPV Family",
+            "spk": 241,
+            "delivered": 213,
+            "revenue": 59728200000,
+            "target": 301
+          },
+          {
+            "product": "SUV Urban",
+            "spk": 148,
+            "delivered": 130,
+            "revenue": 43523700000,
+            "target": 174
+          },
+          {
+            "product": "Scooter 155",
+            "spk": 564,
+            "delivered": 529,
+            "revenue": 16679300000,
+            "target": 689
+          }
+        ],
+        "salespeople": [
+          {
+            "name": "Nadia",
+            "branch": "Manado",
+            "spk": 188,
+            "delivered": 172,
+            "revenue": 22499300000
+          },
+          {
+            "name": "Raka",
+            "branch": "Palu",
+            "spk": 150,
+            "delivered": 131,
+            "revenue": 17688200000
+          },
+          {
+            "name": "Rani",
+            "branch": "Manado",
+            "spk": 134,
+            "delivered": 123,
+            "revenue": 18434100000
+          },
+          {
+            "name": "Maya",
+            "branch": "Kendari",
+            "spk": 125,
+            "delivered": 113,
+            "revenue": 17577900000
+          },
+          {
+            "name": "Bayu",
+            "branch": "Palu",
+            "spk": 97,
+            "delivered": 93,
+            "revenue": 13452100000
+          },
+          {
+            "name": "Fajar",
+            "branch": "Gorontalo",
+            "spk": 95,
+            "delivered": 89,
+            "revenue": 13460400000
+          },
+          {
+            "name": "Dodi",
+            "branch": "Gorontalo",
+            "spk": 83,
+            "delivered": 76,
+            "revenue": 8166100000
+          },
+          {
+            "name": "Sari",
+            "branch": "Kendari",
+            "spk": 81,
+            "delivered": 75,
+            "revenue": 8653100000
+          }
+        ],
+        "channels": [
+          {
+            "channel": "WhatsApp",
+            "leads": 10273,
+            "spk": 394,
+            "delivered": 377
+          },
+          {
+            "channel": "Instagram",
+            "leads": 2419,
+            "spk": 110,
+            "delivered": 93
+          },
+          {
+            "channel": "Facebook",
+            "leads": 1838,
+            "spk": 65,
+            "delivered": 57
+          },
+          {
+            "channel": "TikTok",
+            "leads": 1494,
+            "spk": 67,
+            "delivered": 61
+          },
+          {
+            "channel": "Website",
+            "leads": 1484,
+            "spk": 95,
+            "delivered": 87
+          },
+          {
+            "channel": "Walk-in",
+            "leads": 1105,
+            "spk": 222,
+            "delivered": 197
+          }
+        ]
+      }
+    },
+    {
+      "filter": {
+        "from": "2026-08-01",
+        "to": "2026-10-17",
+        "branch": "Palu"
+      },
+      "expected": {
+        "source": "simulation",
+        "asOf": "2026-10-17T07:30:00.000Z",
+        "from": "2026-08-01",
+        "to": "2026-10-17",
+        "branch": "Palu",
+        "kpi": {
+          "spk": 247,
+          "delivered": 224,
+          "revenue": 31140300000,
+          "cancelled": 16,
+          "target": 307,
+          "outstanding": 37,
+          "credit": 153,
+          "leads": 4781
+        },
+        "trend": [
+          {
+            "month": "2026-05",
+            "spk": 83,
+            "delivered": 48,
+            "target": 91
+          },
+          {
+            "month": "2026-06",
+            "spk": 96,
+            "delivered": 78,
+            "target": 93
+          },
+          {
+            "month": "2026-07",
+            "spk": 95,
+            "delivered": 96,
+            "target": 97
+          },
+          {
+            "month": "2026-08",
+            "spk": 89,
+            "delivered": 81,
+            "target": 100
+          },
+          {
+            "month": "2026-09",
+            "spk": 98,
+            "delivered": 90,
+            "target": 102
+          },
+          {
+            "month": "2026-10",
+            "spk": 60,
+            "delivered": 53,
+            "target": 105
+          }
+        ],
+        "branches": [
+          {
+            "branch": "Palu",
+            "spk": 247,
+            "delivered": 224,
+            "revenue": 31140300000,
+            "target": 307
+          }
+        ],
+        "products": [
+          {
+            "product": "MPV Family",
+            "spk": 67,
+            "delivered": 59,
+            "revenue": 16537500000,
+            "target": 79
+          },
+          {
+            "product": "SUV Urban",
+            "spk": 36,
+            "delivered": 31,
+            "revenue": 10379300000,
+            "target": 46
+          },
+          {
+            "product": "Scooter 155",
+            "spk": 144,
+            "delivered": 134,
+            "revenue": 4223500000,
+            "target": 182
+          }
+        ],
+        "salespeople": [
+          {
+            "name": "Raka",
+            "branch": "Palu",
+            "spk": 150,
+            "delivered": 131,
+            "revenue": 17688200000
+          },
+          {
+            "name": "Bayu",
+            "branch": "Palu",
+            "spk": 97,
+            "delivered": 93,
+            "revenue": 13452100000
+          }
+        ],
+        "channels": [
+          {
+            "channel": "WhatsApp",
+            "leads": 2638,
+            "spk": 103,
+            "delivered": 94
+          },
+          {
+            "channel": "Instagram",
+            "leads": 628,
+            "spk": 30,
+            "delivered": 26
+          },
+          {
+            "channel": "Facebook",
+            "leads": 473,
+            "spk": 12,
+            "delivered": 12
+          },
+          {
+            "channel": "TikTok",
+            "leads": 377,
+            "spk": 19,
+            "delivered": 19
+          },
+          {
+            "channel": "Website",
+            "leads": 381,
+            "spk": 29,
+            "delivered": 28
+          },
+          {
+            "channel": "Walk-in",
+            "leads": 284,
+            "spk": 54,
+            "delivered": 45
+          }
+        ]
+      }
+    },
+    {
+      "filter": {
+        "from": "2026-05-01",
+        "to": "2026-10-17"
+      },
+      "expected": {
+        "source": "simulation",
+        "asOf": "2026-10-17T07:30:00.000Z",
+        "from": "2026-05-01",
+        "to": "2026-10-17",
+        "branch": null,
+        "kpi": {
+          "spk": 1984,
+          "delivered": 1719,
+          "revenue": 228989800000,
+          "cancelled": 133,
+          "target": 2227,
+          "outstanding": 132,
+          "credit": 1110,
+          "leads": 38641
+        },
+        "trend": [
+          {
+            "month": "2026-05",
+            "spk": 326,
+            "delivered": 202,
+            "target": 342
+          },
+          {
+            "month": "2026-06",
+            "spk": 343,
+            "delivered": 300,
+            "target": 355
+          },
+          {
+            "month": "2026-07",
+            "spk": 362,
+            "delivered": 345,
+            "target": 366
+          },
+          {
+            "month": "2026-08",
+            "spk": 361,
+            "delivered": 326,
+            "target": 377
+          },
+          {
+            "month": "2026-09",
+            "spk": 373,
+            "delivered": 341,
+            "target": 388
+          },
+          {
+            "month": "2026-10",
+            "spk": 219,
+            "delivered": 205,
+            "target": 399
+          }
+        ],
+        "branches": [
+          {
+            "branch": "Manado",
+            "spk": 654,
+            "delivered": 568,
+            "revenue": 74561600000,
+            "target": 704
+          },
+          {
+            "branch": "Palu",
+            "spk": 521,
+            "delivered": 446,
+            "revenue": 59545400000,
+            "target": 588
+          },
+          {
+            "branch": "Kendari",
+            "spk": 431,
+            "delivered": 373,
+            "revenue": 51630700000,
+            "target": 450
+          },
+          {
+            "branch": "Gorontalo",
+            "spk": 378,
+            "delivered": 332,
+            "revenue": 43252100000,
+            "target": 485
+          }
+        ],
+        "products": [
+          {
+            "product": "MPV Family",
+            "spk": 503,
+            "delivered": 413,
+            "revenue": 115941300000,
+            "target": 576
+          },
+          {
+            "product": "SUV Urban",
+            "spk": 304,
+            "delivered": 237,
+            "revenue": 79335600000,
+            "target": 334
+          },
+          {
+            "product": "Scooter 155",
+            "spk": 1177,
+            "delivered": 1069,
+            "revenue": 33712900000,
+            "target": 1317
+          }
+        ],
+        "salespeople": [
+          {
+            "name": "Nadia",
+            "branch": "Manado",
+            "spk": 373,
+            "delivered": 321,
+            "revenue": 40524500000
+          },
+          {
+            "name": "Rani",
+            "branch": "Manado",
+            "spk": 281,
+            "delivered": 247,
+            "revenue": 34037100000
+          },
+          {
+            "name": "Raka",
+            "branch": "Palu",
+            "spk": 287,
+            "delivered": 245,
+            "revenue": 31512200000
+          },
+          {
+            "name": "Maya",
+            "branch": "Kendari",
+            "spk": 267,
+            "delivered": 231,
+            "revenue": 33981400000
+          },
+          {
+            "name": "Bayu",
+            "branch": "Palu",
+            "spk": 234,
+            "delivered": 201,
+            "revenue": 28033200000
+          },
+          {
+            "name": "Fajar",
+            "branch": "Gorontalo",
+            "spk": 210,
+            "delivered": 185,
+            "revenue": 26400000000
+          },
+          {
+            "name": "Dodi",
+            "branch": "Gorontalo",
+            "spk": 168,
+            "delivered": 147,
+            "revenue": 16852100000
+          },
+          {
+            "name": "Sari",
+            "branch": "Kendari",
+            "spk": 164,
+            "delivered": 142,
+            "revenue": 17649300000
+          }
+        ],
+        "channels": [
+          {
+            "channel": "WhatsApp",
+            "leads": 21205,
+            "spk": 828,
+            "delivered": 730
+          },
+          {
+            "channel": "Instagram",
+            "leads": 5037,
+            "spk": 219,
+            "delivered": 187
+          },
+          {
+            "channel": "Facebook",
+            "leads": 3876,
+            "spk": 147,
+            "delivered": 129
+          },
+          {
+            "channel": "TikTok",
+            "leads": 3124,
+            "spk": 129,
+            "delivered": 112
+          },
+          {
+            "channel": "Website",
+            "leads": 3094,
+            "spk": 198,
+            "delivered": 168
+          },
+          {
+            "channel": "Walk-in",
+            "leads": 2305,
+            "spk": 463,
+            "delivered": 393
+          }
+        ]
+      }
+    },
+    {
+      "filter": {
+        "from": "2026-05-01",
+        "to": "2026-10-17",
+        "branch": "Palu"
+      },
+      "expected": {
+        "source": "simulation",
+        "asOf": "2026-10-17T07:30:00.000Z",
+        "from": "2026-05-01",
+        "to": "2026-10-17",
+        "branch": "Palu",
+        "kpi": {
+          "spk": 521,
+          "delivered": 446,
+          "revenue": 59545400000,
+          "cancelled": 38,
+          "target": 588,
+          "outstanding": 37,
+          "credit": 293,
+          "leads": 9872
+        },
+        "trend": [
+          {
+            "month": "2026-05",
+            "spk": 83,
+            "delivered": 48,
+            "target": 91
+          },
+          {
+            "month": "2026-06",
+            "spk": 96,
+            "delivered": 78,
+            "target": 93
+          },
+          {
+            "month": "2026-07",
+            "spk": 95,
+            "delivered": 96,
+            "target": 97
+          },
+          {
+            "month": "2026-08",
+            "spk": 89,
+            "delivered": 81,
+            "target": 100
+          },
+          {
+            "month": "2026-09",
+            "spk": 98,
+            "delivered": 90,
+            "target": 102
+          },
+          {
+            "month": "2026-10",
+            "spk": 60,
+            "delivered": 53,
+            "target": 105
+          }
+        ],
+        "branches": [
+          {
+            "branch": "Palu",
+            "spk": 521,
+            "delivered": 446,
+            "revenue": 59545400000,
+            "target": 588
+          }
+        ],
+        "products": [
+          {
+            "product": "MPV Family",
+            "spk": 137,
+            "delivered": 112,
+            "revenue": 31435900000,
+            "target": 151
+          },
+          {
+            "product": "SUV Urban",
+            "spk": 81,
+            "delivered": 58,
+            "revenue": 19409600000,
+            "target": 89
+          },
+          {
+            "product": "Scooter 155",
+            "spk": 303,
+            "delivered": 276,
+            "revenue": 8699900000,
+            "target": 348
+          }
+        ],
+        "salespeople": [
+          {
+            "name": "Raka",
+            "branch": "Palu",
+            "spk": 287,
+            "delivered": 245,
+            "revenue": 31512200000
+          },
+          {
+            "name": "Bayu",
+            "branch": "Palu",
+            "spk": 234,
+            "delivered": 201,
+            "revenue": 28033200000
+          }
+        ],
+        "channels": [
+          {
+            "channel": "WhatsApp",
+            "leads": 5402,
+            "spk": 212,
+            "delivered": 181
+          },
+          {
+            "channel": "Instagram",
+            "leads": 1306,
+            "spk": 59,
+            "delivered": 51
+          },
+          {
+            "channel": "Facebook",
+            "leads": 993,
+            "spk": 36,
+            "delivered": 34
+          },
+          {
+            "channel": "TikTok",
+            "leads": 786,
+            "spk": 37,
+            "delivered": 34
+          },
+          {
+            "channel": "Website",
+            "leads": 793,
+            "spk": 57,
+            "delivered": 49
+          },
+          {
+            "channel": "Walk-in",
+            "leads": 592,
+            "spk": 120,
+            "delivered": 97
+          }
+        ]
+      }
+    },
+    {
+      "filter": {
+        "from": "2026-06-10",
+        "to": "2026-07-20",
+        "branch": "Kendari"
+      },
+      "expected": {
+        "source": "simulation",
+        "asOf": "2026-10-17T07:30:00.000Z",
+        "from": "2026-06-10",
+        "to": "2026-07-20",
+        "branch": "Kendari",
+        "kpi": {
+          "spk": 102,
+          "delivered": 88,
+          "revenue": 12552500000,
+          "cancelled": 8,
+          "target": 146,
+          "outstanding": 29,
+          "credit": 66,
+          "leads": 1963
+        },
+        "trend": [
+          {
+            "month": "2026-02",
+            "spk": 0,
+            "delivered": 0,
+            "target": 0
+          },
+          {
+            "month": "2026-03",
+            "spk": 0,
+            "delivered": 0,
+            "target": 0
+          },
+          {
+            "month": "2026-04",
+            "spk": 0,
+            "delivered": 0,
+            "target": 0
+          },
+          {
+            "month": "2026-05",
+            "spk": 76,
+            "delivered": 49,
+            "target": 69
+          },
+          {
+            "month": "2026-06",
+            "spk": 75,
+            "delivered": 64,
+            "target": 72
+          },
+          {
+            "month": "2026-07",
+            "spk": 48,
+            "delivered": 45,
+            "target": 74
+          }
+        ],
+        "branches": [
+          {
+            "branch": "Kendari",
+            "spk": 102,
+            "delivered": 88,
+            "revenue": 12552500000,
+            "target": 146
+          }
+        ],
+        "products": [
+          {
+            "product": "MPV Family",
+            "spk": 26,
+            "delivered": 21,
+            "revenue": 5888900000,
+            "target": 38
+          },
+          {
+            "product": "SUV Urban",
+            "spk": 18,
+            "delivered": 15,
+            "revenue": 5022300000,
+            "target": 22
+          },
+          {
+            "product": "Scooter 155",
+            "spk": 58,
+            "delivered": 52,
+            "revenue": 1641300000,
+            "target": 86
+          }
+        ],
+        "salespeople": [
+          {
+            "name": "Maya",
+            "branch": "Kendari",
+            "spk": 60,
+            "delivered": 57,
+            "revenue": 8816900000
+          },
+          {
+            "name": "Sari",
+            "branch": "Kendari",
+            "spk": 42,
+            "delivered": 31,
+            "revenue": 3735600000
+          }
+        ],
+        "channels": [
+          {
+            "channel": "WhatsApp",
+            "leads": 1062,
+            "spk": 49,
+            "delivered": 40
+          },
+          {
+            "channel": "Instagram",
+            "leads": 260,
+            "spk": 11,
+            "delivered": 8
+          },
+          {
+            "channel": "Facebook",
+            "leads": 203,
+            "spk": 6,
+            "delivered": 6
+          },
+          {
+            "channel": "TikTok",
+            "leads": 158,
+            "spk": 7,
+            "delivered": 8
+          },
+          {
+            "channel": "Website",
+            "leads": 163,
+            "spk": 10,
+            "delivered": 10
+          },
+          {
+            "channel": "Walk-in",
+            "leads": 117,
+            "spk": 19,
+            "delivered": 16
+          }
+        ]
+      }
+    },
+    {
+      "filter": {
+        "from": "2026-10-17",
+        "to": "2026-10-17",
+        "branch": "Gorontalo"
+      },
+      "expected": {
+        "source": "simulation",
+        "asOf": "2026-10-17T07:30:00.000Z",
+        "from": "2026-10-17",
+        "to": "2026-10-17",
+        "branch": "Gorontalo",
+        "kpi": {
+          "spk": 2,
+          "delivered": 1,
+          "revenue": 31500000,
+          "cancelled": 0,
+          "target": 86,
+          "outstanding": 20,
+          "credit": 1,
+          "leads": 53
+        },
+        "trend": [
+          {
+            "month": "2026-05",
+            "spk": 68,
+            "delivered": 43,
+            "target": 74
+          },
+          {
+            "month": "2026-06",
+            "spk": 63,
+            "delivered": 63,
+            "target": 78
+          },
+          {
+            "month": "2026-07",
+            "spk": 69,
+            "delivered": 61,
+            "target": 80
+          },
+          {
+            "month": "2026-08",
+            "spk": 68,
+            "delivered": 64,
+            "target": 82
+          },
+          {
+            "month": "2026-09",
+            "spk": 70,
+            "delivered": 58,
+            "target": 85
+          },
+          {
+            "month": "2026-10",
+            "spk": 40,
+            "delivered": 43,
+            "target": 86
+          }
+        ],
+        "branches": [
+          {
+            "branch": "Gorontalo",
+            "spk": 2,
+            "delivered": 1,
+            "revenue": 31500000,
+            "target": 86
+          }
+        ],
+        "products": [
+          {
+            "product": "MPV Family",
+            "spk": 0,
+            "delivered": 0,
+            "revenue": 0,
+            "target": 22
+          },
+          {
+            "product": "SUV Urban",
+            "spk": 0,
+            "delivered": 0,
+            "revenue": 0,
+            "target": 13
+          },
+          {
+            "product": "Scooter 155",
+            "spk": 2,
+            "delivered": 1,
+            "revenue": 31500000,
+            "target": 51
+          }
+        ],
+        "salespeople": [
+          {
+            "name": "Fajar",
+            "branch": "Gorontalo",
+            "spk": 1,
+            "delivered": 1,
+            "revenue": 31500000
+          },
+          {
+            "name": "Dodi",
+            "branch": "Gorontalo",
+            "spk": 1,
+            "delivered": 0,
+            "revenue": 0
+          }
+        ],
+        "channels": [
+          {
+            "channel": "WhatsApp",
+            "leads": 31,
+            "spk": 0,
+            "delivered": 0
+          },
+          {
+            "channel": "Instagram",
+            "leads": 6,
+            "spk": 0,
+            "delivered": 0
+          },
+          {
+            "channel": "Facebook",
+            "leads": 5,
+            "spk": 1,
+            "delivered": 0
+          },
+          {
+            "channel": "TikTok",
+            "leads": 4,
+            "spk": 0,
+            "delivered": 0
+          },
+          {
+            "channel": "Website",
+            "leads": 4,
+            "spk": 0,
+            "delivered": 1
+          },
+          {
+            "channel": "Walk-in",
+            "leads": 3,
+            "spk": 1,
+            "delivered": 0
+          }
+        ]
+      }
+    },
+    {
+      "filter": {
+        "from": "2025-11-01",
+        "to": "2026-05-31"
+      },
+      "expected": {
+        "source": "simulation",
+        "asOf": "2026-10-17T07:30:00.000Z",
+        "from": "2025-11-01",
+        "to": "2026-05-31",
+        "branch": null,
+        "kpi": {
+          "spk": 326,
+          "delivered": 202,
+          "revenue": 19834600000,
+          "cancelled": 13,
+          "target": 342,
+          "outstanding": 111,
+          "credit": 101,
+          "leads": 6507
+        },
+        "trend": [
+          {
+            "month": "2025-12",
+            "spk": 0,
+            "delivered": 0,
+            "target": 0
+          },
+          {
+            "month": "2026-01",
+            "spk": 0,
+            "delivered": 0,
+            "target": 0
+          },
+          {
+            "month": "2026-02",
+            "spk": 0,
+            "delivered": 0,
+            "target": 0
+          },
+          {
+            "month": "2026-03",
+            "spk": 0,
+            "delivered": 0,
+            "target": 0
+          },
+          {
+            "month": "2026-04",
+            "spk": 0,
+            "delivered": 0,
+            "target": 0
+          },
+          {
+            "month": "2026-05",
+            "spk": 326,
+            "delivered": 202,
+            "target": 342
+          }
+        ],
+        "branches": [
+          {
+            "branch": "Manado",
+            "spk": 99,
+            "delivered": 62,
+            "revenue": 5273900000,
+            "target": 108
+          },
+          {
+            "branch": "Palu",
+            "spk": 83,
+            "delivered": 48,
+            "revenue": 4016400000,
+            "target": 91
+          },
+          {
+            "branch": "Kendari",
+            "spk": 76,
+            "delivered": 49,
+            "revenue": 5657900000,
+            "target": 69
+          },
+          {
+            "branch": "Gorontalo",
+            "spk": 68,
+            "delivered": 43,
+            "revenue": 4886400000,
+            "target": 74
+          }
+        ],
+        "products": [
+          {
+            "product": "MPV Family",
+            "spk": 86,
+            "delivered": 38,
+            "revenue": 10713400000,
+            "target": 88
+          },
+          {
+            "product": "SUV Urban",
+            "spk": 47,
+            "delivered": 13,
+            "revenue": 4360300000,
+            "target": 51
+          },
+          {
+            "product": "Scooter 155",
+            "spk": 193,
+            "delivered": 151,
+            "revenue": 4760900000,
+            "target": 203
+          }
+        ],
+        "salespeople": [
+          {
+            "name": "Nadia",
+            "branch": "Manado",
+            "spk": 55,
+            "delivered": 35,
+            "revenue": 3164900000
+          },
+          {
+            "name": "Maya",
+            "branch": "Kendari",
+            "spk": 49,
+            "delivered": 32,
+            "revenue": 3166700000
+          },
+          {
+            "name": "Bayu",
+            "branch": "Palu",
+            "spk": 45,
+            "delivered": 28,
+            "revenue": 2886400000
+          },
+          {
+            "name": "Fajar",
+            "branch": "Gorontalo",
+            "spk": 44,
+            "delivered": 27,
+            "revenue": 2958900000
+          },
+          {
+            "name": "Rani",
+            "branch": "Manado",
+            "spk": 44,
+            "delivered": 27,
+            "revenue": 2109000000
+          },
+          {
+            "name": "Raka",
+            "branch": "Palu",
+            "spk": 38,
+            "delivered": 20,
+            "revenue": 1130000000
+          },
+          {
+            "name": "Sari",
+            "branch": "Kendari",
+            "spk": 27,
+            "delivered": 17,
+            "revenue": 2491200000
+          },
+          {
+            "name": "Dodi",
+            "branch": "Gorontalo",
+            "spk": 24,
+            "delivered": 16,
+            "revenue": 1927500000
+          }
+        ],
+        "channels": [
+          {
+            "channel": "WhatsApp",
+            "leads": 3552,
+            "spk": 142,
+            "delivered": 82
+          },
+          {
+            "channel": "Instagram",
+            "leads": 847,
+            "spk": 32,
+            "delivered": 20
+          },
+          {
+            "channel": "Facebook",
+            "leads": 665,
+            "spk": 25,
+            "delivered": 15
+          },
+          {
+            "channel": "TikTok",
+            "leads": 531,
+            "spk": 23,
+            "delivered": 16
+          },
+          {
+            "channel": "Website",
+            "leads": 520,
+            "spk": 28,
+            "delivered": 16
+          },
+          {
+            "channel": "Walk-in",
+            "leads": 392,
+            "spk": 76,
+            "delivered": 53
+          }
+        ]
+      }
+    }
+  ]
+}

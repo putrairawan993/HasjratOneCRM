@@ -389,6 +389,7 @@ type app struct {
 	deepseekURL string
 	model       string
 	client      *http.Client
+	sales       salesSource
 }
 
 func respond(w http.ResponseWriter, status int, v any) {
@@ -442,7 +443,11 @@ func (a *app) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	if r.URL.Path == "/api/integrations" && r.Method == http.MethodGet {
-		respond(w, 200, map[string]any{"ai": map[string]any{"provider": "deepseek", "configured": a.deepseekKey != "", "model": a.model}})
+		respond(w, 200, map[string]any{"ai": map[string]any{"provider": "deepseek", "configured": a.deepseekKey != "", "model": a.model}, "mssql": map[string]any{"configured": a.sales != nil}})
+		return
+	}
+	if r.URL.Path == "/api/sales/dashboard" && r.Method == http.MethodGet {
+		a.salesDashboard(w, r)
 		return
 	}
 	if r.Method != http.MethodPost {
@@ -591,7 +596,12 @@ func main() {
 		origins[strings.TrimSpace(v)] = true
 	}
 	a := &app{repo: &mysqlRepository{db: db}, token: token, origins: origins, deepseekKey: os.Getenv("DEEPSEEK_API_KEY"), deepseekURL: "https://api.deepseek.com", model: env("DEEPSEEK_MODEL", "deepseek-flash"), client: &http.Client{Timeout: 25 * time.Second}}
+	if dsn := os.Getenv("MSSQL_DSN"); dsn != "" {
+		var salesDB *sql.DB
+		salesDB, a.sales = openSales(dsn)
+		defer salesDB.Close()
+	}
 	server := http.Server{Addr: env("LISTEN_ADDR", "127.0.0.1:8080"), Handler: a, ReadHeaderTimeout: 5 * time.Second, ReadTimeout: 15 * time.Second, WriteTimeout: 35 * time.Second, IdleTimeout: 60 * time.Second, MaxHeaderBytes: 16384}
-	log.Printf("OneCRM assessment Go API listening on %s; persistent MySQL; no live channel/ERP integration", server.Addr)
+	log.Printf("OneCRM assessment Go API listening on %s; persistent MySQL; MS SQL sales reporting configured: %t; no live channel/ERP integration", server.Addr, a.sales != nil)
 	log.Fatal(server.ListenAndServe())
 }
